@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Andale Mono";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header" "main" "footer";
+  -ms-grid-rows: 1fr 5fr 1fr;
+      grid-template-rows: 1fr 5fr 1fr;
+  min-height: 100vh;
+}
+
+.background {
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  margin-top: 1em;
+}
+
+header img {
+  display: block;
+  max-height: 4em;
+  margin-right: 2em;
+  margin-left: 10%;
+  height: auto;
+  width: auto;
+  mix-blend-mode: multiply;
+  background: -webkit-gradient(linear, left top, right top, from(#d273ff), color-stop(50%, #009dff), to(#0ecfa7));
+  background: linear-gradient(90deg, #d273ff 0%, #009dff 50%, #0ecfa7 100%);
+}
+
+header #name {
+  font-size: 2em;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+}
+
+main ul {
+  list-style-type: none;
+}
+
+main ul #thing {
+  border-left: .5em solid #7BDDF3;
+}
+
+main ul #api {
+  border-left: .5em solid #BC3787;
+}
+
+main ul #scripts {
+  border-left: .5em solid #7D7BF3;
+}
+
+main ul li {
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  font-size: 2em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+main ul a {
+  margin-left: 0.5em;
+  letter-spacing: 0.2em;
+}
+
+main ul a:hover {
+  text-decoration: underline;
+}
+
+main a {
+  text-decoration: none;
+  color: black;
+}
+
+main #content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #content a {
+  font-size: 1.25em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+main #content a:hover {
+  text-decoration: underline;
+}
+
+main #content #title {
+  margin-bottom: 1em;
+}
+
+main #content img {
+  border-radius: .5em;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+main #content #descrip {
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer #links {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer #links i {
+  color: black;
+  font-size: 2.5em;
+}
+
+footer p {
+  text-align: center;
+  margin-bottom: .25em;
+}
+
+footer p i {
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+  color: red;
+}
+
+#rect-one {
+  background: #2D9CDB;
+  -webkit-clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 25% 70%);
+          clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 25% 70%);
+  z-index: -10;
+}
+
+#rect-two {
+  background: #7BDDF3;
+  -webkit-clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 30% 63%);
+          clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 30% 63%);
+  z-index: -11;
+}
+
+@media only screen and (min-width: 700px) {
+  .background {
+    display: block;
+  }
+  main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main ul {
+    margin-left: 25%;
+  }
+  main #content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer #links {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  footer #links i {
+    color: white;
+    font-size: 3em;
+    margin-left: 1em;
+  }
+  footer p {
+    color: white;
+  }
+}
+/*# sourceMappingURL=style.css.map */
