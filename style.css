@@ -186,8 +186,7 @@ footer p {
 }
 
 footer p i {
-  margin-left: 0.25em;
-  margin-right: 0.25em;
+  margin-left: 0.5em;
   color: red;
 }
 
@@ -223,6 +222,15 @@ footer p i {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
   footer #links {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -234,6 +242,7 @@ footer p i {
     margin-left: 1em;
   }
   footer p {
+    margin-right: 10%;
     color: white;
   }
 }

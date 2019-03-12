@@ -139,8 +139,7 @@ footer {
         text-align: center;
         margin-bottom: .25em;
         i {
-            margin-left: 0.25em;
-            margin-right: 0.25em;
+            margin-left: 0.5em;
             color: red;
         }
     }
@@ -172,6 +171,8 @@ footer {
         }
     }
     footer {
+        flex-direction: row;
+        align-items: flex-end;
         #links {
             justify-content: flex-start;
             
@@ -182,6 +183,7 @@ footer {
             }
         }
         p {
+            margin-right: 10%;
             color: white;
         }
     }
