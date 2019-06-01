@@ -1,0 +1,137 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+%flex-row {
+	display: flex;
+	flex-direction: row;
+}
+%flex-col {
+	display: flex;
+	flex-direction: column;
+}
+$font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-size: 2em;
+// Link transitions
+.fa-github:hover {
+	color: black;
+}
+.fa-twitter:hover {
+	color: #00acee;
+}
+.fa-instagram {
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+	-webkit-background-clip: text;
+	color: transparent;
+	// https://stackoverflow.com/questions/12732663/text-gradient-with-font-awesome
+	&:not(:hover) {
+		background: transparent;
+		color: white;
+	}
+}
+.fa-envelope:hover {
+	color: rgba(110, 20, 189, 0.454);
+}
+.fab:hover,
+.fa:hover {
+	transition-duration: 0.5s;
+}
+
+header {
+    .name {
+        font-size: 3em;
+    }
+    .info {
+        font-size: 2em;
+        margin-bottom: .5em;
+    }
+	i {
+		font-size: $font-size;
+	}
+	@extend %flex-row;
+	font-weight: 100;
+	.header {
+		flex-grow: 3;
+		@extend %flex-col;
+	}
+	.description-wrapper {
+		@extend %flex-row;
+		.description {
+			@extend %flex-col;
+		}
+		.spacer {
+			flex-grow: 1;
+		}
+	}
+	.contact {
+		@extend %flex-row;
+		justify-content: space-between;
+	}
+
+	nav {
+		display: flex;
+		@extend %flex-row;
+		flex-grow: 1;
+		justify-content: space-between;
+		font-size: $font-size;
+
+		a:hover {
+			text-decoration: underline;
+        }
+        .selected {
+            font-weight: normal;
+        }
+	}
+}
+h1 {
+	font-weight: 100;
+}
+h3 {
+	font-weight: 100;
+	padding-bottom: 0.5em;
+}
+footer {
+	justify-content: flex-end;
+	display: flex;
+	a {
+		font-size: $font-size;
+		margin-right: 1em;
+		&:hover > i {
+			color: red;
+		}
+		i {
+			color: pink;
+		}
+	}
+}
+body {
+	font-family: $font-stack;
+	font-weight: 100;
+    padding: 3em;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	background: linear-gradient(to bottom, #30a9c3, #8255cd);
+	a {
+		text-decoration: none;
+		color: white;
+	}
+}
+@media only screen and (max-width: 900px) {
+    //max-height: 100vh;
+    //font-size: .5em;
+	header {
+		flex-direction: column-reverse;
+	}
+	nav {
+        flex-direction: column;
+        flex-wrap: wrap;
+        a {
+            width: 100%;
+        }
+		padding-bottom: 1em;
+		border-bottom: 2px solid white;
+	}
+}
