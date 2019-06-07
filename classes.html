@@ -1,15 +1,17 @@
 <html lang="en">
+
 <head>
     <title>Classes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/classes.css">
-            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-                integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-                crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/prism.css">
 
 </head>
+
 <body>
     <nav class="navbar navbar-expand-md navbar-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleThisDiv">
@@ -28,50 +30,96 @@
     <div class="container-fluid">
         <div class="jumbotron">
             <h1 class="display-4">Learn Programming!</h1>
-            <p> Are </p>
-            <h3> Skills taught </h3>
-            <ul class="fa-ul">
-
-                <li><span class='fa-li'><i class="fas fa-check"></i></span> Proper Documentation Practices </li>
-                <li><span class='fa-li'><i class="fas fa-code-branch"></i></span>Source Control </li>
-                <li><span class='fa-li'><i class="fas fa-laptop-code"></i></span> How to use professional tools including: 
-                <ul class="fa-ul">
-                    <li><span class='fa-li'><i class="fab fa-github"></i></span> Github </li>
-                    <li><span class='fa-li'><i class="fas fa-terminal"></i></span> Terminal </li>
-                    <li><span class='fa-li'><i class="fas fa-check"></i></span> Visual Studio Code </li>
-                </ul></li>
-            </ul>
-            <h3> Concepts taught</h3>
-            <ul>
-                <li>Loops</li>
-                <li>Libraries</li>
-                <li>Abstraction</li>
-                <li>Classes</li>
-                <li>Web requests</li>
-                <li>Conditional Statements</li>
-            </ul>
-            <p>
-                Python Programming Class
+            <p> Do you or your child have an interest in computers? If so, this course could be the perfect
+                introduction to programming.
+                Whether you are interested in videogames, websites, robotics, python is the perfect place to start.
             </p>
-            <h4>Structure</h4>
-            <div> The class will spend each day creating small programs to learn new concepts. 
-                <br>Towards the end of the class, we will use all of their skills to create a pokemon data finder.</div>
-            <h4>Cost</h4>
-            <div>The cost per student is $200. This means that it costs you less that $15 per hour. <br>
-                I can accept cash, check, or paypal (+2% fee)</div>
-            <h4>Schedule</h4>
-            <div>The class will be July 1-5 1-4PM.</div>
-            <button class="btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#collapseExample">Sign up now!
+            <p>
+                This course will teach Python, a very beginner friendly programming language used for a variety of
+                purposes.
+                
+            </p>
+            <div class="row">
+                <div class="col-lg">
+
+                    <pre>
+                        <code class="language-python">
+import colors as c
+import time
+while True:
+    print(c.random() + 'Python is awesome' + '!' * 5,
+        end='\r')
+    time.sleep(0.1) # 0.1 seconds
+                        </code>
+                    </pre>
+                </div>
+                <div class="col-lg">
+                    <img class="img-fluid" src="assets/example-program.gif">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg">
+
+                    <h3> Skills taught </h3>
+                    <ul class="fa-ul">
+
+                        <li><span class='fa-li'><i class="fas fa-check"></i></span> Proper Documentation Practices </li>
+                        <li><span class='fa-li'><i class="fas fa-code-branch"></i></span>Source Control </li>
+                        <li><span class='fa-li'><i class="fas fa-laptop-code"></i></span> How to use professional tools
+                            including:
+                            <ul class="fa-ul">
+                                <li><span class='fa-li'><i class="fab fa-github"></i></span> Github </li>
+                                <li><span class='fa-li'><i class="fas fa-terminal"></i></span> Terminal </li>
+                                <li><span class='fa-li'><i class="fas fa-check"></i></span> Visual Studio Code </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h3> Concepts taught</h3>
+                    <ul>
+                        <li>Loops</li>
+                        <li>Libraries</li>
+                        <li>Abstraction</li>
+                        <li>Classes</li>
+                        <li>Web requests</li>
+                        <li>Conditional Statements</li>
+                    </ul>
+                </div>
+                <div class="col-lg">
+
+                    <h3>Structure</h3>
+                    <div> The class will spend each day creating small programs to learn new concepts. These include an
+                        eightball program, a dice roller and many more.
+                        <br>Towards the end of the class, we will use all concepts to create a pokemon information
+                        lookup program.
+                    </div>
+                    <h3>Cost</h3>
+                    <div>The cost per student is $200. This means that it costs ~$15 per hour. I believe that this is
+                        more than fair, but if you are unhappy with the price, feel free to contact me.<br>
+                        I can accept cash, check, or paypal (+2% fee)</div>
+                    <h3>Schedule</h3>
+                    <div>The class will be July 1-5 1-4PM.</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a class="btn btn-primary btn-lg" href="https://forms.gle/Tm2hFMQ95RKvngc87">Sign up now!</a>
+                    <a class="btn btn-outline-secondary btn-lg" href="mailto:peter.a.stenger@gmail.com">I have a
+                        question</a>
+
+                </div>
+            </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+        </script>
+    <script src="prism.js"></script>
 </body>
+
 </html>
