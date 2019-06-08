@@ -31,26 +31,59 @@
         </div>
     </nav>
     <main>
-
         <div class="container">
+            <div class="game" style="display: none;">
+                <div class="row">
+                    <div class="col">
+                        <h2 style="text-align: center">
+                                <span class="badge badge-pill badge-success">5 <i class="fa fa-question" aria-hidden="true"></i></span>
+                                <span class="badge badge-pill badge-info">Jim</span>
+                                <span class="badge badge-pill badge-primary">9999</span>
+                            <span class="badge badge-pill badge-danger">5 <i class="fa fa-fire"
+                                    aria-hidden="true"></i></span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
 
-            <div class="row">
-                <div class="col">
-                    <form>
-                        <div class="form-group">
-                            <label for="username">Username</label>
-                            <input type="text" class="form-control" id="username" placeholder="Enter the bot's name"
-                                maxlength="15" name="username" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Game Pin</label>
-                            <input type="number" class="form-control" id="exampleInputPassword1"
-                                placeholder="Enter the game pin" name="pin" required>
-                            <small class="form-text text-muted">Not all games are able to be cracked.</small>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Connect</button>
-                    </form>
+                    <div class="col">
 
+                        <div class="btn-group-lg btn-group manual">
+                            <button type="button" class="btn btn-danger" value="1">▲</button>
+                            <button type="button" class="btn btn-primary" value="2">◆</button>
+                            <button type="button" class="btn btn-warning" style="color: white" value="3">●</button>
+                            <button type="button" class="btn btn-success" value="4">■</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-check">
+                            <input class="form-check-input disabled" type="checkbox" value="" id="auto">
+                            <label class="form-check-label" for="correct">
+                                Automatic
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="login">
+                <div class="row">
+                    <div class="col">
+                        <form>
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input type="text" class="form-control" id="username" placeholder="Enter the bot's name"
+                                    maxlength="15" name="username" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Game Pin</label>
+                                <input type="number" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Enter the game pin" name="pin" required>
+                                <small class="form-text text-muted">Not all games are able to be cracked.</small>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Connect</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -61,7 +94,7 @@
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/idiidk/kahoot-api@master/dist/kahoot.minified.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/reteps/kahoot-api@master/dist/kahoot.minified.js"></script>
     <script src="kahoot-answer.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
