@@ -1,14 +1,6 @@
 body {
       background: linear-gradient(to bottom, #8a2387, #e94057, #f27121);
-    .nav-link {
-        font-size: 2em;
-    }
 }
 a.nav-link {
     color: white;
-}
-@media only screen and (max-width: 768px) {
-    body { .nav-link {
-        font-size: 1em;
-    }}
 }
