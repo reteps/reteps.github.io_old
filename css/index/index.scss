@@ -12,7 +12,7 @@
 	flex-direction: column;
 }
 $font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-size: 2em;
+$font-size: 1em;
 // Link transitions
 .fa-github:hover {
 	color: black;
@@ -40,10 +40,10 @@ $font-size: 2em;
 
 header {
     .name {
-        font-size: 3em;
+        font-size: $font-size * 3;
     }
     .info {
-        font-size: 2em;
+        font-size: $font-size * 2;
         margin-bottom: .5em;
     }
 	i {
@@ -67,6 +67,7 @@ header {
 	.contact {
 		@extend %flex-row;
 		justify-content: space-between;
+		font-size: $font-size *2;
 	}
 
 	nav {
@@ -74,7 +75,7 @@ header {
 		@extend %flex-row;
 		flex-grow: 1;
 		justify-content: space-between;
-		font-size: $font-size;
+		font-size: $font-size * 2;
 
 		a:hover {
 			text-decoration: underline;
@@ -82,6 +83,30 @@ header {
         .selected {
             font-weight: normal;
         }
+	}
+}
+.dropdown-options {
+	display: none;
+	flex-direction: column;
+}
+
+.dropdown:hover {
+	.dropdown-label {
+		text-decoration: underline;
+	}
+	.dropdown-options {
+		position: absolute;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		display: flex;
+		a {
+			font-size: .75em;
+		}
+		hr {
+			margin-top: .25em;
+			border-style: solid;
+			margin-bottom: .25em;
+		};
 	}
 }
 h1 {
@@ -95,7 +120,7 @@ footer {
 	justify-content: flex-end;
 	display: flex;
 	a {
-		font-size: $font-size;
+		font-size: $font-size * 2;
 		margin-right: 1em;
 		&:hover > i {
 			color: red;
@@ -111,6 +136,7 @@ body {
     padding: 3em;
 	color: white;
 	display: flex;
+	font-size: $font-size;
 	justify-content: space-between;
 	flex-direction: column;
 	background: linear-gradient(to bottom, #30a9c3, #8255cd);
@@ -124,6 +150,11 @@ body {
     //font-size: .5em;
 	header {
 		flex-direction: column-reverse;
+	}
+	.dropdown:hover {
+		.dropdown-options {
+			position: static;
+		}
 	}
 	nav {
         flex-direction: column;
