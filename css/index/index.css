@@ -3,6 +3,7 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Montserrat";
 }
 
 header, header .description-wrapper, header .contact, header nav {
@@ -174,7 +175,6 @@ footer a i {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 100;
   padding: 3em;
   color: white;
