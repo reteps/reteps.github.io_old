@@ -1,8 +1,8 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,IAAI,CAAC;EACC,UAAU,EAAE,qDAAqD;CACtE;;AACD,AAAA,CAAC,AAAA,SAAS,CAAC;EACP,KAAK,EAAE,KAAK;CACf",
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACC,UAAU,EAAE,qDAAqD;CAAG;;AAC1E,AAAA,CAAC,AAAA,SAAS,CAAC;EACP,KAAK,EAAE,KAAK;CAAG",
     "sources": [
-        "classes.scss"
+        "classes.sass"
     ],
     "names": [],
     "file": "classes.css"
