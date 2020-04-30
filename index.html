@@ -12,16 +12,6 @@
         .container {
             width: 100%;
             min-height: 100vh;
-            
-        }
-        .blue {
-            color: #3b7793;
-            color: #4ea36a;
-            color: #763d8d;
-            color: #dddddd;
-            color: #f78300;
-            color: #3c4042;
-            color: #3a5da9;
         }
         body {
             background: #f4f5f6;
@@ -40,13 +30,6 @@
         #about {
             background-color:#763d8d;
         }
-        .cards {
-                    flex-direction: row;
-                    justify-content: space-evenly;
-                    flex-wrap: wrap;
-                    display: flex;
-
-        }
         .projects {
             display: flex;
             width: 100%;
@@ -55,6 +38,7 @@
         .about {
             height: 100%;
             background-color:#763d8d;
+
         }
         .resume {
             width: 100%;
@@ -62,6 +46,12 @@
             flex-direction: row;
             align-items: center;
             background: #3a5da9;
+        }
+        .cards {
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            display: flex;
         }
         .link:hover, .selected {
             transform: translate(2px, 8px);
@@ -71,7 +61,7 @@
             
             cursor: pointer;
             padding: 10px;
-            font-size: 50px;
+            font-size: 20px;
             border-radius: 5px;
             box-shadow: 2px 8px 0px 0px black;
             color: #dddddd;
@@ -80,24 +70,42 @@
             text-decoration: none;
             
         }
-        @media (max-width: 480px) {
-            .link {
-                font-size: 20px;
-            }
-            .about-main {
-
-            font-size: 15px;
-            }
-            .contact i {
-            font-size: 1em;
-            }
+        .about-part-2 {
+            margin:auto;
         }
-        @media (max-width: 1200px) {
+        @media (min-width: 600px) {
             .link {
                 font-size: 30px;
             }
+            .about-main {
+                font-size: 15px;
+            }
+            .contact i {
+            font-size: 3em !important;
+            }
+            .spacer {
+                height: 0%;
+            }
+            .about-part-2 {
+                margin: none;
+            }
+            .about-main {
+            flex-direction: row !important;
+            }
+        }
+        @media (min-width: 1200px) {
+            .link {
+                font-size: 50px;
+            }
+
+            .about-main {
+            font-size: 30px;
+            }
             iframe {
-                width: 100% !important;
+                width: 50% !important;
+            }
+            .contact i {
+                font-size: 5em !important;
             }
         }
         .section {
@@ -134,13 +142,14 @@
             color:#3c4042;
         }
         .about-main {
-            font-size: 30px;
+            font-size: 15px;
             border-radius: 5px;
             background:#f4f5f6;
             margin-left: 1em;
             padding: 1em;
             margin-right: 1em;
             display: flex;
+            flex-direction: column-reverse;
         }
         .contact {
             padding-top: 1em;
@@ -148,14 +157,14 @@
             justify-content: space-around;
         }
         .contact i {
-            font-size: 5em;
+            font-size: 2em;
         }
         iframe {
             border: none;
             padding: 2em 0 2em 0;
             display: block;
             margin: auto;
-            width: 50%;
+            width: 100%;
             height: 100%;
         }
     </style>
@@ -240,20 +249,23 @@
         </div>
         <div class="section about">
             <div class="about-main">
-                
-                Hi there! My name is Peter Stenger. I'm currently a high school junior at Huron High School, and I want to go into the field of computer science. 
-                I moved to Ann Arbor my Sophomore year and it really helped me grow and develop as a person. I currently run cross country, participate in Boy Scouts, and a variety of clubs including FIRST Robotics and Business Professionals of America.
-                <div class="contact">
-                    
-                    <a target="_blank" href="https://www.hackerrank.com/peter_a_stenger"><i
+                <div class="about-part">
+
+                    Hi there! My name is Peter Stenger. I'm currently a high school junior at Huron High School, and I want to go into the field of computer science. 
+                    I moved to Ann Arbor my Sophomore year and it really helped me grow and develop as a person. I currently run cross country, participate in Boy Scouts, and a variety of clubs including FIRST Robotics and Business Professionals of America.
+                    <div class="contact">
+                        
+                        <a target="_blank" href="https://www.hackerrank.com/peter_a_stenger"><i
                             class="fab fa-hackerrank"></i></a>
-                    <a target="_blank" href="https://instagram.com/peter._.stenger"><i class="fab fa-instagram"></i></a>
-                    <a target="_blank" href="mailto:peter.a.stenger@gmail.com"><i class="far fa-envelope"></i></a>
-                    <a target="_blank" href="https://github.com/reteps"><i class="fab fa-github"></i></a>
-                </div>               
-            <div>
-                <img src="assets/me.jpg">
-            </div></div>
+                            <a target="_blank" href="https://instagram.com/peter._.stenger"><i class="fab fa-instagram"></i></a>
+                            <a target="_blank" href="mailto:peter.a.stenger@gmail.com"><i class="far fa-envelope"></i></a>
+                            <a target="_blank" href="https://github.com/reteps"><i class="fab fa-github"></i></a>
+                    </div>               
+                </div>
+                <div class="about-part-2">
+                    <img src="assets/me.jpg">
+                </div>
+            </div>
         </div>
     </div>
 </body>
